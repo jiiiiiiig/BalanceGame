@@ -47,27 +47,25 @@
   <div class="container">
     <div class="jumbotron">
       <div class='text-center'>
-        <p id="tt">당신의 음흉한 레벨은?</p>
+        <h5 id="tt">당신의 음흉한 레벨은?</h5>
             <h1 id="t">밸런스게임</h1>
       </div>
 
       <div class="row">
         <div class-"text-center">
           <div class="col-lg-6">
-            <div id="aa1" style="display:block">
-              ㅁㄴㅇㄹㅁㄴㅇㄷㄹㅁㄴㅇㄹ
+            <div class="text-align" onclick="up();q()">
+              <h3 id="a1">모모모뫀ㅋ</h3>
             </div>
-            <img name="rsp" src="" height="300" class="img-rounded">
           </div>
 
           <div class="col-lg-6">
-            <div id="bb1" style="display:block">
-              ㅁㄴㅇㄹㅁㄴㅇㄹ
+            <div class="text-align" onclick="up();q()">
+              <h3 id="a2">sssss</h3>
             </div>
             <br><br>
           </div>
 
-          <h2 id="q" onclick="up();"></h2>
           <br>
         </div>
       </div>
@@ -81,12 +79,7 @@
       a++;
     }
 
-    function title() {
-      document.getElementById("tt").innerHTML = "당신의 음흉한 레벨은?"
-      document.getElementById("t").innerHTML = "밸런스게임"
-    }
-
-    function question() {
+    function q() {
       switch (a) {
         case 1:
           document.getElementById("t").style.display = "none";
@@ -103,8 +96,6 @@
           break;
         default:
           document.getElementById("q").style.display = "none";
-
-
       }
     }
   </script>
