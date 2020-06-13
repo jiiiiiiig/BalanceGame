@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <style>
     nav{
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
     .jumbotron{
       margin: : 50px;
@@ -42,30 +42,52 @@
 
 
 
-    <div class="jumbotron">
+    <!--div class="jumbotron">
       <div class="container">
         <div class='text-center'>
 
           <h1>밸런스게임</h1>
           <br>
-          <!--h4 class="text-muted">본 서비스는 한양대학교 체인지메이커십 <br> 한사수 팀 프로젝트입니다.</h4-->
+          <h4 class="text-muted">본 서비스는 한양대학교 체인지메이커십 <br> 한사수 팀 프로젝트입니다.</h4>
         </div>
       </div>
-    </div>
+    </div-->
 
     <div class="container">
       <div class="jumbotron">
+        <div class='text-center'>
+          <p id="tt"><p>
+          <h1 id="t"></h1>
+        </div>
         <h2 id="q"></h2>
-        <button name="aa">
+        <br>
 
 
         </div>
       </div>
     <script>
-      document.getElementById("q").innerHTML = "이성을 볼 때 중요한 것은?"
-      document.getElementById("q").innerHTML = "이성을 볼 때 중요한 것은?"
-      document.getElementById("q").innerHTML = "이성을 볼 때 중요한 것은?"
-      document.getElementById("q").innerHTML = "이성을 볼 때 중요한 것은?"
+    var a = 0;
+    function up(){
+      a++;
+    }
+    function title(){
+      document.getElementById("tt").innerHTML = "당신의 음흉한 레벨은?"
+      document.getElementById("t").innerHTML = "밸런스게임"
+    }
+    function question() {
+      switch (a) {
+        case 1: document.getElementById("q").innerHTML = "이성을 볼 때 중요한 것은?"
+        case 2: document.getElementById("q").innerHTML = "이성을 볼 때 중요한 것은?"
+        case 3: document.getElementById("q").innerHTML = "이성을 볼 때 중요한 것은?"
+        case 4: document.getElementById("q").innerHTML = "이성을 볼 때 중요한 것은?"
+        case 5: document.getElementById("q").innerHTML = "이성을 볼 때 중요한 것은?"
+          break;
+        default: document.getElementById("q").style.display = "none";
+
+
+      }
+    }
+
 
     </script>
 
