@@ -47,9 +47,8 @@
   <div class="container">
     <div class="jumbotron">
       <div class='text-center'>
-        <p id="tt">
-          <p>
-            <h1 id="t"></h1>
+        <p id="tt">당신의 음흉한 레벨은?</p>
+            <h1 id="t">밸런스게임</h1>
       </div>
 
       <div class="row">
@@ -94,6 +93,8 @@
     function question() {
       switch (a) {
         case 1:
+          document.getElementById("t").style.display = "none";
+          document.getElementById("tt").style.display = "none";
           document.getElementById("q").innerHTML = "이성을 볼 때 중요한 것은?"
         case 2:
           document.getElementById("q").innerHTML = "둘 볼 때 중요한 것은?"
