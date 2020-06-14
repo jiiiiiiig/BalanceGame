@@ -130,16 +130,25 @@
     }
 
     function save(i) {
-      if (a == 3 && i == 1) {
-
-      } else if (a == 3 && i == 2) {
-        m += 1;
-      } else if (a == 4 && i == 1) {
-
-      } else if (a == 4 && i == 2) {
-        c += 1;
+      if (a==3){
+        if (i == 1) {
+          m = 0;
+        } else if (i == 2) {
+          m = 1;
+        }
       }
+      if (a==4){
+        if (i == 1) {
+          c = 0;
+        } else if (i == 2) {
+          c = 1;
+        }
+      }
+
     }
+    국산노모가 국산노모
+    해외노모가 국산노모로나오고
+    국산유모가 국산노모로나오고
 
     function next() {
       document.getElementById("rt").style.display = "";
