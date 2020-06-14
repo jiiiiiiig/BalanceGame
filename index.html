@@ -90,54 +90,57 @@
     }
 
     function q() {
-      switch (a) {
-        case 1:
-          document.getElementById("t").style.display = "none";
-          document.getElementById("tt").style.display = "none";
-          document.getElementById("ttt").style.display = "none";
-          document.getElementById("a1").innerHTML = "사랑하는 사람과 자기"
-          document.getElementById("a2").innerHTML = "우리 자기와 사랑하기"
-          document.getElementById("a1").style.display = "";
-          document.getElementById("a2").style.display = "";
-        case 2:
-          document.getElementById("a1").innerHTML = "앞"
-          document.getElementById("a2").innerHTML = "뒤"
-        case 3:
-          document.getElementById("a1").innerHTML = "전희"
-          document.getElementById("a2").innerHTML = "후희"
-        case 4:
-          document.getElementById("a1").innerHTML = "노모"
-          document.getElementById("a2").innerHTML = "유모"
-        case 5:
-          document.getElementById("a1").innerHTML = "국산"
-          document.getElementById("a2").innerHTML = "일본,서양"
-        case 6:
-          document.getElementById("a1").style.display = "none";
-          document.getElementById("a2").style.display = "none";
-          next();
+      if (a == 1) {
+        document.getElementById("t").style.display = "none";
+        document.getElementById("tt").style.display = "none";
+        document.getElementById("ttt").style.display = "none";
+        document.getElementById("a1").innerHTML = "사랑하는 사람과 자기"
+        document.getElementById("a2").innerHTML = "우리 자기와 사랑하기"
+        document.getElementById("a1").style.display = "";
+        document.getElementById("a2").style.display = "";
+      }
+      if (a == 2) {
+        document.getElementById("a1").innerHTML = "앞"
+        document.getElementById("a2").innerHTML = "뒤"
+      }
+      if (a == 3) {
+        document.getElementById("a1").innerHTML = "전희"
+        document.getElementById("a2").innerHTML = "후희"
+      }
+      if (a == 4) {
+        document.getElementById("a1").innerHTML = "노모"
+        document.getElementById("a2").innerHTML = "유모"
+      }
+      if (a == 5) {
+        document.getElementById("a1").innerHTML = "국산"
+        document.getElementById("a2").innerHTML = "일본,서양"
+      }
+      if (a == 6) {
+        document.getElementById("a1").style.display = "none";
+        document.getElementById("a2").style.display = "none";
+        next();
+      }else{
+        document.getElementById("a1").innerHTML = "[SYSTEM ERROR]"
+      }
+    }
 
-          break;
-        default:
-          document.getElementById("a1").style.display = "none";
-          document.getElementById("a2").style.display = "none";
+    function next() {
+      document.getElementById("tt").style.display = "";
+      if (a == 0 && b == 0) {
+        document.getElementById("tt").innerHTML = "당신의 취향은 국산 노모 작품이군요."
+
+      } else if (a == 0 && b == 1) {
+        document.getElementById("tt").innerHTML = "당신의 취향은 해외 노모 작품이군요."
+
+      } else if (a == 1 && b == 0) {
+        document.getElementById("tt").innerHTML = "당신의 취향은 국산 유모 작품이군요."
+
+      } else if (a == 1 && b == 1) {
+        document.getElementById("tt").innerHTML = "당신의 취향은 해외 유모 작품이군요."
+
       }
 
-      function next() {
-        document.getElementById("tt").style.display = "";
-        if(a==0&&b==0){
-          document.getElementById("tt").innerHTML = "당신의 취향은 국산 노모 작품이군요."
-
-        }else if(a==0&&b==1){
-          document.getElementById("tt").innerHTML = "당신의 취향은 해외 노모 작품이군요."
-
-        }else if(a==1&&b==0){
-          document.getElementById("tt").innerHTML = "당신의 취향은 국산 유모 작품이군요."
-
-        }else if(a==1&&b==1){
-          document.getElementById("tt").innerHTML = "당신의 취향은 해외 유모 작품이군요."
-        }
-
-      }
+    }
     }
   </script>
 
