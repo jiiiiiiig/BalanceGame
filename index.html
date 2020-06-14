@@ -96,7 +96,7 @@
       if (a == 1) {
         document.getElementById("t").style.display = "none";
         document.getElementById("tt").style.display = "none";
-        document.getElementById("ttt").style.display = "none";
+        document.getElementById("ttt").innerHTML = "당신의 선택은?"
         document.getElementById("a1").innerHTML = "사랑하는 사람과 자기"
         document.getElementById("a2").innerHTML = "우리 자기와 사랑하기"
         document.getElementById("a1").style.display = "";
@@ -117,19 +117,19 @@
         document.getElementById("a1").style.display = "none";
         document.getElementById("a2").style.display = "none";
         next();
-      } else {
-        window.location.href = 'http://jiiiiiiig.github.io/BalanceGame/img.html';
+      } else{
+        document.getElementById("a1").innerHTML = "[SYSTEM ERROR]"
       }
     }
 
-    function save(i) {
-      if (a == 3 && i == 1) {
+    function save(i){
+      if(a==3&&i==1){
 
-      } else if (a == 3 && i == 2) {
+      }else if(a==3&&i==2){
         m += 1;
-      } else if (a == 4 && i == 1) {
+      }else if(a==4&&i==1){
 
-      } else if (a == 4 && i == 2) {
+      }else if(a==4&&i==2){
         c += 1;
       }
     }
@@ -154,6 +154,8 @@
       document.getElementById("a2").style.display = "";
       document.getElementById("a1").innerHTML = "예"
       document.getElementById("a2").innerHTML = "아니오"
+
+      window.location.href = 'http://jiiiiiiig.github.io/BalanceGame/img.html';
 
     }
   </script>
