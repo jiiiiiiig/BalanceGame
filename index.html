@@ -126,7 +126,7 @@
     }
 
     function save(i) {
-      console.log("순서a=%d,선택i=%d",a,i);
+      console.log("순서a=%d,선택i=%d", a, i);
       if (a == 5) {
         console.log('모자이크');
         if (i == 1) {
@@ -136,20 +136,21 @@
           m = 1;
           console.log('유모');
         }
-        if (a == 6) {
-          console.log('나라');
-          if (i == 1) {
-            c = 0;
-            console.log('국산');
-          } else if (i == 2) {
-            c = 1;
-            console.log('해외');
-          }
-          next();
-        }
-
       }
+      if (a == 6) {
+        console.log('나라');
+        if (i == 1) {
+          c = 0;
+          console.log('국산');
+        } else if (i == 2) {
+          c = 1;
+          console.log('해외');
+        }
+        next();
+      }
+
     }
+
 
 
     function next() {
