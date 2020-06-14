@@ -120,7 +120,6 @@
       } else if (a == 6) {
         document.getElementById("a1").style.display = "none";
         document.getElementById("a2").style.display = "none";
-        next();
       } else {
         window.location.href = 'http://jiiiiiiig.github.io/BalanceGame/img.html';
       }
@@ -140,14 +139,15 @@
           if (i == 1) {
             c = 0;
             console.log('국산');
-
           } else if (i == 2) {
             c = 1;
             console.log('해외');
-
           }
         }
+        if (a==7){
+          next();
 
+        }
       }
     }
 
